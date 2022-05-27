@@ -28,7 +28,7 @@ namespace UnderstandingArrays
 
             //int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 };
 
-            string[] names = new string[] { "Eddie", "Alex", "Micheal", "David Lee" };
+            //string[] names = new string[] { "Eddie", "Alex", "Micheal", "David Lee" };
 
             /*
             for (int i = 0; i < names.Length; i++)
@@ -38,11 +38,26 @@ namespace UnderstandingArrays
             Console.ReadLine();
             */
 
+            /*
             foreach (string name in names)
             {
                 Console.WriteLine(name);
             }
             Console.ReadLine();
+            */
+
+            string zig = "You can get what you want out of life" +
+                " if you help other peopel get what they want.";
+
+            char[] charArray = zig.ToCharArray();
+            Array.Reverse(charArray);
+
+            foreach (char zigChar in charArray)
+            {
+                Console.Write(zigChar);
+            }
+            Console.ReadLine();
+
         }
     }
 }
